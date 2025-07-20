@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
+import os 
 
 # Load the model
 current_dir = os.path.dirname(__file__)
