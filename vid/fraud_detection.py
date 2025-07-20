@@ -3,8 +3,9 @@ import pandas as pd
 import joblib
 
 # Load the model
-model = joblib.load("fraud_detection_pipeline.pkl")
-
+current_dir = os.path.dirname(__file__)
+model_path = os.path.join(current_dir, "fraud_detection_pipeline.pkl")
+model = joblib.load(model_path)
 
 
 # Title and description
